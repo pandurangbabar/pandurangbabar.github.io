@@ -8,15 +8,21 @@ body {
     font-family: 'Arial', sans-serif;
     background-color: #f0f8ff;
     color: #333;
+    scroll-behavior: smooth;
 }
 
-/* Navigation Bar */
-.navbar {
+/* Fancy Navigation Bar */
+.fancy-navbar {
     background-color: #1e3a8a; /* Dark blue */
     padding: 20px 0;
-    text-align: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
-.navbar .container {
+.fancy-navbar .container {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,27 +31,41 @@ body {
     color: #fff;
     font-size: 24px;
     text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+.navbar-brand:hover {
+    color: #90caf9;
 }
 .nav-links {
     list-style: none;
     display: flex;
     gap: 20px;
 }
-.nav-links a {
+.nav-item {
     color: #fff;
     text-decoration: none;
     font-size: 16px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 4px;
 }
-.nav-links a:hover {
-    color: #90caf9;
+.nav-item:hover {
+    background-color: #90caf9;
+    color: #1e3a8a;
+}
+.nav-links .nav-item.active {
+    background-color: #fff;
+    color: #1e3a8a;
 }
 
 /* Header Section */
 .header {
-    background-color: #1e88e5; /* Blue */
+    background-color: #1e88e5; /* Light blue */
     color: #fff;
-    padding: 60px 20px;
+    padding: 100px 20px;
     text-align: center;
+    margin-top: 80px; /* Space for fixed navbar */
 }
 .header .container {
     display: flex;
