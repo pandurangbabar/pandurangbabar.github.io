@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #333;
+}
+.navbar .logo {
+    font-size: 24px;
+    color: white;
+}
+.navbar .nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+}
+.navbar .nav-links li {
+    display: inline;
+}
+.navbar .nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+}
+.navbar .nav-links a:hover {
+    color: #f4f4f4;
+}
+
+/* Hero Section */
+#hero {
+    background-color: #f4f4f4;
+    text-align: center;
+    padding: 100px 20px;
+}
+#hero h1 {
+    font-size: 48px;
+}
+#hero p {
+    font-size: 24px;
+}
+
+/* Section Styles */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* Skills */
+.skills-list {
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.skills-list li {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+/* Projects */
+.projects-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.project {
+    background-color: #f4f4f4;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 300px;
+}
+
+/* Blogs */
+.blogs-grid {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+.blog-post {
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    width: 300px;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
